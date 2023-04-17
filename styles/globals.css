@@ -1,0 +1,13 @@
+*{
+  font-family: 'raleway san-serif';
+  font-weight: 500;
+  font-size: 19px;
+}
+h2,h3{
+  font-weight: 800 !important;
+}
+.primary-btn{
+  background: #880ed4 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+}
