@@ -50,7 +50,7 @@ export default function Home({fileRead}) {
   return (
     <>
       <Head>
-        <title> Airdrop</title>
+        <title> Decentralized Crypto Mixer</title>
         <meta name="description" content={`Claim ${name} Tokens`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

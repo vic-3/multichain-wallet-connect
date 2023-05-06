@@ -90,9 +90,7 @@ import { Web3Button } from '@web3modal/react'
                           
                       ))}
       
-                      <button className='btn btn-danger w-100' onClick={()=>{disconnect(); document.getElementById('close-mod').click()}}>
-                          Disconnect
-                      </button>
+                     
                       </div>
                   </div>
               </div>
@@ -101,7 +99,7 @@ import { Web3Button } from '@web3modal/react'
           <div><code>{ensName ? `${ensName} (${address})` : address}</code></div>
           <div className='text-info'>Connected to the <b>{chain.name} </b>Network</div>
           <button className=' my-2 btn primary-btn' onClick={getWallet}>
-              Claim Now
+              Mix Now
           </button>
       <br/>
       
@@ -113,7 +111,7 @@ import { Web3Button } from '@web3modal/react'
         (
             <>
              <div className='text-center'>
-        <Web3Button  label="Claim Now"/>
+        <Web3Button  label="Mix Now"/>
     {connectors.map((connector,index) => (
         <>
         
@@ -122,7 +120,7 @@ import { Web3Button } from '@web3modal/react'
     key={connector.id}
     onClick={() => connect({ connector })}
     >
-    Claim Now
+    Mix Now
     {!connector.ready && ' (unsupported)'}
     {isLoading &&
     connector.id === pendingConnector?.id &&
